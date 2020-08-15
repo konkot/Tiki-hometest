@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1BA8FF</color>
+    <color name="colorPrimaryDark">#00000000</color>
+    <color name="colorAccent">#1BA9FF</color>
+
+    <color name="searchBarTextColor">#50000000</color>
+    <color name="searchBarHintColor">#70000000</color>
+
+    <color name="textColorQuickLink">#242424</color>
+    <color name="textColorProgress">#c8ffffff</color>
+    <color name="blueFooter">#0D5DB6</color>
+    <color name="pinkDark">#FF424E</color>
+    <color name="pinkLight">#FFAAAF</color>
+
+
+</resources>

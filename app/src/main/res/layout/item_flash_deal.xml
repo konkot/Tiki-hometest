@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_horizontal"
+
+    >
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <com.tt.hometest.views.MyImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/flash_deal_image_size"
+            android:layout_height="@dimen/flash_deal_image_size"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/discountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:text="-50%"
+            android:background="@drawable/rounded_rectangle"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/discount_percent_text_size"
+            android:textStyle="bold"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorQuickLink"
+        android:textSize="@dimen/price_text_size"
+        android:text="100.000 đ"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.tt.hometest.views.ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColor="@color/textColorProgress"
+            android:text="Da ban 0"
+            android:textSize="@dimen/progress_text_size"
+            android:layout_gravity="center|bottom"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+        <View
+            android:id="@+id/fireIcon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="left|top"
+            android:background="@drawable/ic_fire"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            />
+    </FrameLayout>
+
+</LinearLayout>

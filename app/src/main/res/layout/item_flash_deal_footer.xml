@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="@dimen/flash_deal_footer_size"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="5dp"
+    >
+    <View
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/ic_view_more"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/price_text_size"
+        android:textColor="@color/blueFooter"
+        android:text="@string/view_more"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        />
+
+    <!--<include
+        layout="@layout/item_quick_link_icon"
+        />
+
+    <include
+        layout="@layout/item_quick_link_text"
+        />-->
+
+</LinearLayout>

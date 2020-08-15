@@ -1,0 +1,41 @@
+<resources>
+    <dimen name="search_bar_margin_right">100dp</dimen>
+    <dimen name="search_bar_padding">8dp</dimen>
+    <dimen name="search_text_padding_left">60dp</dimen>
+    <dimen name="search_icon_margin_left">18dp</dimen>
+    <dimen name="search_icon_margin_top">6dp</dimen>
+    <dimen name="search_icon_margin_bottom">6dp</dimen>
+
+    <dimen name="quick_link_text_size">12sp</dimen>
+    <dimen name="discount_percent_text_size">10sp</dimen>
+    <dimen name="progress_text_size">10sp</dimen>
+    <dimen name="price_text_size">16sp</dimen>
+
+    <dimen name="quick_link_padding_top">8dp</dimen>
+    <dimen name="quick_link_padding_left">5dp</dimen>
+
+    <dimen name="flash_deal_image_size">100dp</dimen>
+    <dimen name="flash_deal_footer_size">150dp</dimen>
+
+    <dimen name="widget_padding">10dp</dimen>
+    <dimen name="widget_padding_2">5dp</dimen>
+
+    <dimen name="view_margin">16dp</dimen>
+    <dimen name="view_margin_2">10dp</dimen>
+
+    <dimen name="banner_item_margin">10dp</dimen>
+
+    <dimen name="logo_margin_top">8dp</dimen>
+    <dimen name="logo_margin_bottom">0dp</dimen>
+
+<!--    <dimen name="app_bar_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>-->
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="image_icon_size">32dp</dimen>
+
+    <dimen name="action_button_margin">10dp</dimen>
+
+    <dimen name="desc_icon_size">24dp</dimen>
+
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_scrolling"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:id="@+id/bannerParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+                    />
+
+                <include
+                    android:id="@+id/bannerProgressBar"
+                    layout="@layout/progress_bar"
+                    />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/quickLinkParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/quickLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:paddingLeft="@dimen/widget_padding"
+                    android:paddingRight="@dimen/widget_padding"
+                    android:clipToPadding="false"
+                    />
+
+                <include
+                    android:id="@+id/quickLinkProgressBar"
+                    layout="@layout/progress_bar"
+                    />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/flashDealParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:src="@drawable/flashdeal_title"
+                        android:scaleType="fitStart"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        />
+
+                    <Button
+                        android:id="@+id/buttonViewMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/blueFooter"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="@string/view_more" />
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/flashDeal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        android:paddingLeft="@dimen/widget_padding_2"
+                        android:paddingRight="@dimen/widget_padding"
+                        android:clipToPadding="false"
+                        />
+
+                    <include
+                        android:id="@+id/flashDealProgressBar"
+                        layout="@layout/progress_bar"
+                        />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/description"
+                />
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="@string/large_text" />-->
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
